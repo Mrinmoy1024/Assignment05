@@ -72,3 +72,38 @@ if (clearHistoryButton) {
         
     });
 }
+
+//copy button
+
+const copyButtons = document.querySelectorAll('.copy-btn');
+
+copyButtons.forEach(button => {
+    button.addEventListener('click', async function () {
+        
+        const card = this.closest('.card');
+
+    
+        const textElement = card.querySelector('.card-text');
+        const textToCopy = textElement ? textElement.innerText.trim() : '';
+
+        if (!textToCopy) {
+            alert('No text found to copy!');
+            return;
+        }
+
+        try {
+            
+            await navigator.clipboard.writeText(textToCopy);
+            alert(`Copied: ${textToCopy}`);
+        } catch (err) {
+            
+            const textarea = document.createElement('textarea');
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert(`Copied (fallback): ${textToCopy}`);
+        }
+    });
+});
