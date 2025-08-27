@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* navbar section */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.left-side {
+    display: flex;
+    font-weight: bolder;
+    color: #006747;
+    font-size: 1.23rem;
+    
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+.left-side img{
+    width: 50px;
+}
+.right-side {
+    display: flex;
+    align-items: center;
+    
+    margin: 10px;
+    padding: 10px;
+    gap: 30px;
+}
+.heart-icon {
+    padding: 5px 10px ;
+    display: flex;
+    gap: 10px;
+    background-color: #bdf0d6;
+    border-radius: 20px;
+}
+.heart-icon img{
+    width: 25px;
+}
+.heart-icon p {
+    font-weight: bold;
+}
+.coin-icon {
+        padding: 5px 10px ;
+    display: flex;
+    gap: 10px;
+    background-color: #bdf0d6;
+    border-radius: 20px;
+    
+    
+}
+.coin-icon img{
+    width: 25px;
+}
+.coin-icon p {
+    font-weight: bold;
+}
+.nav-btn {
+    background-color: #00A63E ;
+    width: 100px;
+    height: 40px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+
+}
