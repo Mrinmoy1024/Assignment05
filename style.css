@@ -72,3 +72,26 @@
     color: white;
 
 }
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #013223 ,#006747 );
+    padding: 30px;
+
+}
+.banner img {
+    width: 100px;
+}
+.ban-caption {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+.ban-cap2 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
