@@ -101,9 +101,26 @@
 main {
     background-color: #bdf0d6;
 }
+.main-sec {
+    display: flex;
+    justify-content: space-between; 
+    gap: 2rem;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+}
 .card {
     margin: 15px 20px;
     padding: 15px;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 .red-light {
     background-color:#e88989 ;
@@ -130,4 +147,9 @@ color: white;
     padding: 10px;
     border-radius: 15px;
 
+}
+/* call history */
+.call-log-container {
+    display: flex;
+    flex-direction: column-reverse;
 }
