@@ -75,6 +75,9 @@ if (clearHistoryButton) {
 
 //copy button
 
+
+
+
 const copyButtons = document.querySelectorAll('.copy-btn');
 
 copyButtons.forEach(button => {
@@ -107,3 +110,19 @@ copyButtons.forEach(button => {
         }
     });
 });
+
+
+
+
+const copyCountElement = document.getElementById("copy-count");
+const allCopyButtons = document.querySelectorAll(".card-actions .btn:first-child");
+
+let copyCount = 0;
+
+for (let i = 0; i < allCopyButtons.length; i++) {
+    const copyButton = allCopyButtons[i];
+    copyButton.addEventListener("click", function() {
+        copyCount++;
+        copyCountElement.textContent = copyCount;
+    });
+}
